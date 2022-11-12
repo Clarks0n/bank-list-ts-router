@@ -1,0 +1,19 @@
+.button-action-cell{
+    :global {
+        .dx-button{
+            height: auto;
+            width: auto;
+            min-width: auto !important;
+            background: transparent;
+            .dx-button-content{
+                padding: 0;
+                margin-left: 0.8em;
+                i{
+                    color: #747272ed !important;
+                    font-size: 18px !important;
+                }
+            }
+            
+        }
+    }
+}
