@@ -9,6 +9,13 @@ import { Provider } from "react-redux";
 // import store from 'stores/store';
 import { setupStore } from 'stores/store';
 
+import { ApiProvider } from "@reduxjs/toolkit/query/react";
+
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
+
+const queryClient = new QueryClient()
+
 const store = setupStore();
 
 const root = ReactDOM.createRoot(
@@ -17,7 +24,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+    <QueryClientProvider client={queryClient}>
       <App />
+    </QueryClientProvider>
     </Provider>
   </React.StrictMode>
 );

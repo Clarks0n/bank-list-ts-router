@@ -4,6 +4,6 @@ import axios from "axios";
 const URL = 'data/bank.json'
 
 export const http = axios.create({
-    baseURL: URL,
+    baseURL: "http://localhost:3500",
     timeout: 15000,
 });

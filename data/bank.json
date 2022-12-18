@@ -1,0 +1,30 @@
+{
+  "metaData": [
+    {
+      "title": "FakeBank",
+      "longDesc": "Building an app that needs some bake transactions? Well, look no further. Here are what Fry's bank statements might look like from the future.",
+      "desc": "Just a random set of fake bank data.",
+      "featured": false,
+      "categories": ["bank"]
+    }
+  ],
+  "accounts": [
+    {
+      "transactionDate": "2015-12-31",
+      "descriptions": "Dr. FlimFlam's miracle cream",
+      "categorys": "Other Services",
+      "debit": 100.84,
+      "credit": null,
+      "id": 1
+    },
+    {
+      "transactionDate": "2016-01-02",
+      "description": "Dr. FlimFlam's miracle cream",
+      "category": "Health Care",
+      "debit": 59.99,
+      "credit": null,
+      "id": 2
+    }
+   
+  ]
+}

@@ -5,7 +5,7 @@ import routes from 'app-routes';
 
 const App: React.FC = () => {
     return (
-        <Suspense fallback={<h1>Loading... </h1>}>
+        <Suspense fallback={<h1>DOBILEEE... </h1>}>
             <Router>
                 <Routes>
                     {routes.map(({ path, element }) => {

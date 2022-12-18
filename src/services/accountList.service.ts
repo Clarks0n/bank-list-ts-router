@@ -2,9 +2,22 @@ import { http } from "api/http";
 
 export const urlDetail = '/account-list/:id'
 
-const get = (url:string) => {
-    return http.get(url);
+export const getAccount = async () => {
+    const response = await http.get('/accounts')
+    return response.data
 };
+
+export const Getho = async (url:string) => {
+    const response = await http.get(url)
+    return response.data
+};
+
+export const get = (url:string) => {
+    return http.get(url);
+}
+
+
+
 
 const AccountListService = {
     get

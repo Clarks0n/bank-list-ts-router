@@ -1,4 +1,4 @@
-import  { DataGrid as DevExDataGrid, Column, Pager, Paging, FilterRow } from 'devextreme-react/data-grid';
+import  { DataGrid as DevExDataGrid, Column, Pager, Paging, FilterRow, Editing } from 'devextreme-react/data-grid';
 import { Button } from 'devextreme-react';
 
 import style from './datagrid.module.scss';
@@ -41,9 +41,18 @@ const DataGrids = ({dataSource, urlDetail, children}:DataGridProps) => {
             showBorders={true}
 
         >
+            <Editing
+                allowAdding={true}
+                allowDeleting={true}
+                allowUpdating={true}
+            />
             <Pager showInfo={true} />
             <Paging defaultPageSize={10} />
             <FilterRow visible={true} />
+            <Column type="buttons" caption="Action">
+                <Button text='Edit' />
+                <Button text='Delete'/>
+            </Column>
             <Column caption="Detail" cellRender={ButtonDetail} width={60} />
             {children}
         </DevExDataGrid>
